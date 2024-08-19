@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        background-color: rgb(15, 14, 22);
+        /* zoom:25%; */
+        zoom:-2rem;
+    }
+    .wrapper{
+        height: 100vh;
+        width: 100vw;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+    .btn{
+        display: flex;
+        justify-content: flex-end;
+        gap: 12%;
+        margin-left:20px;
+        margin-top:70px;
+        margin-right:3rem;
+        
+        
+    }
+    .btn button a{
+        font-size: 70px;
+        text-decoration: none;
+        color: white;
+        background: fixed;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        background-color: black;
+        box-shadow: 0 0 5px cyan,
+         0 0 25px cyan;
+    }
+    .btn button a:hover{
+        box-shadow: 0 0  5px cyan,
+        0 0 25px cyan, 0 0 50px cyan, 
+        0 0 100px cyan, 0 0 500px cyan;
+        background-color: white;
+        color: rgb(15, 15, 15);
+        
+    }
+    .logotext img{
+    height: 19rem;
+    margin-left: 8rem;
+    margin-top: -7rem;
+    width: 81rem;
+    animation: zoomIn 3s ease-out;
+        
+    
+}
+        
+.auto-typing{
+        margin-top:25rem;
+        margin-left:79rem;
+        width:50ch;
+        animation: typing 5s steps(101),blink 0.5s step-end infinite alternate; 
+        /* animation: typing 2s steps(90),blink 0.5s step-start infinite alternate; */
+        white-space: nowrap;
+        overflow: hidden; 
+        border-right: 35px solid red; 
+        
+        font-size: 7rem;
+        color:cyan;
+        box-shadow: 0 0 5px cyan,
+         0 0 25px cyan;
+
+        box-shadow: 0 0  10px cyan,
+        0 0 25px cyan, 0 0 50px cyan, 
+        0 0 100px cyan, 0 0 500px cyan;
+        background-color: rgb(26, 23, 39);
+        border-radius: 3rem;
+        
+         
+    
+       
+
+    }
+    @keyframes typing{
+        from{
+            width:0;
+        }
+    }
+    @keyframes blink{
+       50%{
+        border-color: transparent;
+       } 
+    } 
+    /*.para p{
+        font-size: 70px;
+        color: rgb(252, 247, 238);
+        font-family: 'Courier New', Courier, monospaces;
+        background: fixed;
+        margin-top:400px;
+        text-align: center;
+        color: white;
+        
+        box-shadow: 0 0 10px cyan,
+         0 0 25px cyan;
+        
+        
+    }*/
+    .skills h2{
+        margin-top:27rem;
+        text-align: center;
+        font-size: 8rem;
+        background-color: rgb(15, 14, 22);
+        color:rgb(17, 235, 235);
+        box-shadow: 0 0 10px cyan,
+        0 0 59px rgb(50, 207, 207);
+        color: white; 
+        border-radius: 200px;
+        
+    }
+     
+  
+
+    .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+}
+.gallery img {
+    width: 200px; 
+    height: 200px; 
+    object-fit: cover;
+    border-radius: 30px;
+    animation: zoomIn 1.5s ease-out infinite; 
+    opacity: 0; 
+}
+@keyframes zoomIn {
+    0% {
+        transform: scale(0.8); /* Start zoomed out */
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1); /* Slightly zoomed in */
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1); /* End at original size */
+        opacity: 1;
+    }
+}
+
+/* Stagger the animation infinitely */
+.zoom-in:nth-child(1) {
+    animation-delay: 0s;
+}
+.zoom-in:nth-child(2) {
+    animation-delay: 0.3s;
+}
+.zoom-in:nth-child(3) {
+    animation-delay: 0.6s;
+}
+.zoom-in:nth-child(4) {
+    animation-delay: 0.9s;
+}
+.zoom-in:nth-child(5) {
+    animation-delay: 1.2s;
+}
+.zoom-in:nth-child(6) {
+    animation-delay: 1.2s;
+}
+
+.zoom-in:nth-child(7) {
+    animation-delay: 1.2s;
+}
+.content1 h2{
+    color: rgb(236, 232, 224);
+    font-size: 160px;
+    margin-left:6rem;
+    margin-top: 15rem;
+    box-shadow: 0 0 5px rgb(196, 191, 164),
+    0 0 25px rgb(196, 218, 218);
+    margin-right:270rem;
+    text-align: center;
+}
+.content2 h2{
+    color: rgb(236, 232, 224);
+    font-size: 160px;
+    margin-left:6rem;
+    margin-top: 15rem;
+    box-shadow: 0 0 5px rgb(196, 191, 164),
+    0 0 25px rgb(196, 218, 218);
+    margin-right:270rem;
+    text-align: center;
+}
+.content3 h2{
+    color: rgb(236, 232, 224);
+    font-size: 160px;
+    margin-left:6rem;
+    margin-top: 15rem;
+    box-shadow: 0 0 5px rgb(196, 191, 164),
+    0 0 25px rgb(196, 218, 218);
+    margin-right:270rem;
+    text-align: center;
+}
+.content4 h2{
+    color: rgb(236, 232, 224);
+    font-size: 160px;
+    margin-left:6rem;
+    margin-top: 15rem;
+    box-shadow: 0 0 5px rgb(196, 191, 164),
+    0 0 25px rgb(196, 218, 218);
+    margin-right:270rem;
+    text-align: center;
+}
+.content5 h2{
+    color: rgb(236, 232, 224);
+    font-size: 160px;
+    margin-left:6rem;
+    margin-top: 15rem;
+    box-shadow: 0 0 5px rgb(196, 191, 164),
+    0 0 25px rgb(196, 218, 218);
+    margin-right:270rem;
+    text-align: center;
+}
+.content6 h2{
+    color: rgb(236, 232, 224);
+    font-size: 160px;
+    margin-left:6rem;
+    margin-top: 15rem;
+    box-shadow: 0 0 5px rgb(196, 191, 164),
+    0 0 25px rgb(196, 218, 218);
+    margin-right:270rem;
+    text-align: center;
+}
+.ht p{
+    font-size: 4rem;
+    color: white;
+    text-align: start;
+    margin-top: -147rem;
+    margin-left: 86rem;
+    /* font-size: 7rem; */
+    color: white;
+    box-shadow: 0 0 5px cyan, 0 0 25px cyan;
+    /*box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    background-color: rgb(26, 23, 39);*/
+    border-radius: 10rem;
+    text-align: center;
+    
+}
+.cs p{
+    font-size: 4rem;
+    color: white;
+    text-align: start;
+    margin-top: 13rem;
+    margin-left: 87rem;
+    /* font-size: 7rem; */
+    color: white;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    /*box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    /*background-color: rgb(26, 23, 39);
+    border-radius: 78rem;*/
+    border-radius: 10rem;
+    text-align: center;
+}
+.js p{
+    
+    font-size: 4rem;
+    color: white;
+    text-align: start;
+    margin-top: 13rem;
+    margin-left: 85rem;
+    /* font-size: 7rem; */
+    color: white;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    /*box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    /*background-color: rgb(26, 23, 39);*/
+    border-radius: 78rem;
+    text-align: center;
+}
+.c p{
+    font-size: 4rem;
+    color: white;
+    text-align: start;
+    margin-top: 13rem;
+    margin-left: 85rem;
+    /* font-size: 7rem; */
+    color: white;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    /*box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    /*background-color: rgb(26, 23, 39);*/
+    border-radius: 78rem;
+    text-align: center;
+}
+.python p{
+    font-size: 4rem;
+    color: white;
+    text-align: start;
+    margin-top: 13rem;
+    margin-left: 85rem;
+    /* font-size: 7rem; */
+    color: white;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    /*box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    /*background-color: rgb(26, 23, 39);*/
+    border-radius: 78rem;
+    text-align: center;
+}
+.mysql p{
+    font-size: 4rem;
+    color: white;
+    text-align: start;
+    margin-top: 13rem;
+    margin-left: 85rem;
+    /* font-size: 7rem; */
+    color: white;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    /*box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    /*background-color: rgb(26, 23, 39);*/
+    border-radius: 78rem;
+    text-align: center;
+}
+.fade-in-text h4 {
+    opacity: 0;
+    font-size: 8rem;
+    color: white;
+    margin-top: 30rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    border-radius: 102rem;
+    border-left: 43rem;
+    text-align: center;
+    animation: fadeIn 0.2s backwards infinite;
+    width: 67rem;
+    margin-left: 135rem;
+    
+    }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 1; /* Start completely transparent */
+            }
+            to {
+                opacity: 1; /* End completely opaque */
+            }
+        }
+
+.zoom {
+    width: 300px;
+    width: 100rem;
+    margin-left: 15rem;
+    margin-top: 29rem;
+    height: 115rem;
+    
+}
+.zoom:hover {
+    transform: scale(1.1); 
+    
+ }
+ .description1 p{
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: -100rem;
+    margin-left: 144rem;
+    margin-right: 48rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    border-radius: 4rem;
+ }
+    
+ .zoom2 {
+    width: 300px;
+    width: 131rem;
+    margin-left: 193rem;
+    margin-top: 40rem;
+    height: 124rem;
+    
+}
+.zoom2:hover {
+    transform: scale(1.1); 
+    
+ }
+
+ 
+
+ .description2 p{
+   
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: -98rem;
+    margin-left: 22rem;
+    margin-right: 171rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    border-radius: 4rem;
+}
+
+ 
+     
+.fade-in-text2 h4 {
+    opacity: 0;
+    font-size: 8rem;
+    color: white;
+    margin-top: 49rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 25px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    border-radius: 102rem;
+    border-left: 43rem;
+    text-align: center;
+    animation: fadeIn 0.2s backwards infinite;
+    width: 67rem;
+    margin-left: 135rem;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0; /* Start completely transparent */
+            }
+            to {
+                opacity: 1; /* End completely opaque */
+            }
+        }
+    
+    .cert1 {
+    margin-left: 87rem;
+    margin-top:40rem;
+    width: 169rem;
+    height: 115rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    
+}
+.cert1:hover {
+    transform: scale(1.1); 
+    
+ }
+ .cert2 {
+    margin-left: 87rem;
+    margin-top:40rem;
+    width: 169rem;
+    height: 115rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    
+}
+.cert2:hover {
+    transform: scale(1.1); 
+    
+ }
+ .cert3 {
+    margin-left: 87rem;
+    margin-top:40rem;
+    width: 169rem;
+    height: 115rem;
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    
+}
+.cert3:hover {
+    transform: scale(1.1); 
+    
+ }
+ 
+.linespade hr{
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    color: cyan;
+    margin-top: 30rem;
+}
+.footer1 h6{
+    color: white;
+    font-size: 5rem;
+    margin-left: 103rem;
+    margin-top: 5rem;
+
+}
+.footer1 h5{
+    color: white;
+    font-size: 3rem;
+    margin-left: 104rem;
+    margin-top: 2rem;
+    
+}
+.footer3 h6{
+    color: white;
+    font-size: 5rem;
+    margin-left: 215rem;
+    margin-top: -421px;
+}
+.footer3 a{
+    color: white;
+    font-size: 3rem;
+    margin-left: 221rem;
+
+}
+.footer3 a:hover{
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+}
+
+.linespade2 hr{
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+    color: cyan;
+    margin-top: 12rem;
+}
+.footer-bottom h5{
+    color: white;
+    font-size: 5rem;
+    margin-top: -31rem;
+    margin-left: 169rem;
+}
+.quicklinks a{
+    color: white;
+    font-size: 3rem;
+    margin-left: 178rem;
+}
+.quicklinks a:hover{
+    box-shadow: 0 0 5px rgb(228, 238, 238), 0 0 25px cyan;
+    box-shadow: 0 0 10px cyan, 0 0 100px cyan, 0 0 50px cyan, 0 0 100px cyan, 0 0 500px cyan;
+}
+.footerlogo img{
+    width: 41rem;
+    height: 10rem;
+    margin-left: 9rem;
+    margin-top: -20rem;
+}
+
+
+   
+   
+</style>
+    <body>
+        <div class="wrapper">
+            <div class="container">
+
+                <div class="btn">
+
+                    <button>
+                        <a href="">Home</a>
+                    </button>
+                    <button>
+                        <a href="projects.html">Projects</a>
+                    </button>
+                    <button>
+                        <a href="About.html">About</a>
+                    </button>
+
+                </div>
+                <div class="logotext">
+                   <img src="namelogo.png" alt="">
+                </div>
+
+            </div>
+
+            <div class="auto-typing">
+                Hi!! This is Harsh Sharma a Software Developer Enthusiast !!
+
+            </div>
+            <!-- <div class="para"> 
+                <p>As a passionate software enthusiast, I thrive on exploring
+                    the cutting edge of technology and programming. With a
+                    strong grasp of languages like C++ , Python & Javascript, I
+                    excel in tackling complex coding challenges and developing
+                    innovative solutions. My curiosity drives me to stay
+                    updated with the latest trends and tools in the tech world,
+                    constantly refining your skills and embracing new
+                    methodologies. My enthusiasm for software is matched by
+                    my collaborative spirit, as I enjoy sharing my
+                    knowledge and contributing to projects within the tech
+                    community. My dedication and love for technology make me
+                    a dynamic and forward-thinking force in the ever-evolving
+                    world of software development.</p>
+            </div>-->
+
+            <div class="skills">
+                <h2>Me & My Tech
+                    Stack</h2><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>
+            <div class="gallery">
+                <img src="html.png" alt="Image 1" class="zoom-in">
+                <img src="csslogo.png" alt="Image 2" class="zoom-in">
+                <img src="jslogo.png" alt="Image 3" class="zoom-in">
+                <img src="sql.png" alt="Image 4" class="zoom-in">
+                <img src="mongodb.png" alt="Image 5" class="zoom-in">
+                <img src="c++logo.png" alt="Image 5" class="zoom-in">
+                <img src="python.jpeg" alt="Image 5" class="zoom-in">
+            </div>
+            <div class="content1">
+                <h2>HTML</h2>
+            </div><br>
+
+            <div class="content2">
+                <h2>CSS</h2>
+            </div>
+
+            <div class="content3">
+                <h2>Javascript</h2>
+            </div>
+
+            <div class="content4">
+                <h2>C++</h2>
+            </div>
+
+            <div class="content5">
+                <h2>Python</h2>
+            </div>
+
+            <div class="content6">
+                <h2>MySql</h2>
+            </div>
+
+            <div class="ht">
+                <p>HTML, or Hypertext Markup Language, is the fundamental
+                    language used to create and design webpages. <br>It structures
+                    the content on the web by using elements like headings,
+                    paragraphs, links, images, and multimedia.<br> HTML uses a
+                    system of tags to define and organize the content, allowing
+                    browsers to render it correctly for users.</p>
+            </div>
+            <div class="cs">
+                <p>CSS, or Cascading Style Sheets, is a stylesheet language used
+                    to control the visual presentation of web pages. <br>While HTML
+                    structures the content, CSS handles the design aspects such
+                    as layout, colors, fonts, and spacing. <br>By applying styles to
+                    HTML elements, CSS allows developers to create visually
+                    appealing and consistent designs </p>
+            </div>
+            <div class="js">
+                <p>JavaScript is a dynamic programming language that brings
+                    interactivity and functionality to web pages. As <br> a
+                    cornerstone of modern web development, JavaScript enables
+                    developers to create responsive and interactive elements 
+                    such <br> as forms, animations, and real-time updates. This
+                    versatility makes JavaScript more enhanced  </p>
+            </div>
+            <div class="c">
+                <p>C++ is a powerful, high-performance programming language
+                    known for its versatility and efficiency. <br> As an extension of
+                    the C language, C++ introduces object-oriented features like
+                    classes and inheritance. <br> They help in designing complex
+                    systems and managing large codebases.</p>
+            </div>
+            <div class="python">
+                <p>Python is a high-level, interpreted programming language
+                    celebrated for its simplicity and readability. <br>  Its clear
+                    syntax, which emphasizes code readability, makes it an
+                    excellent choice for both beginners and experienced <br>
+                    developers. Python supports multiple programming paradigms,
+                    including procedural, object-oriented, and functional
+                    programming.</p>
+            </div>
+            <div class="mysql">
+                <p>MySQL is a widely-used open-source relational database
+                    management system (RDBMS) known for its reliability,<br> 
+                    scalability, and ease of use. It uses Structured Query
+                    Language (SQL) for managing and manipulating data,<br>  which
+                    allows users to perform complex queries, insert, update, and
+                    delete records efficiently.</p>
+            </div>
+
+        
+           
+            
+            
+
+            <div class="fade-in-text"><h4>My Projects</h4></div>
+
+            <img class="zoom" src="PasswordProject.png" alt="Zoom Image">
+
+            <div class="description1">
+                <p>A password generator is an essential tool in today’s digital
+                    age, where securing online accounts has become increasingly
+                    critical due to the rising frequency and sophistication of
+                    cyber-attacks. <br> At its core, a password generator creates
+                    strong, unique passwords that are resistant to common
+                    hacking techniques, such as brute-force attacks or
+                    dictionary attacks. <br>These generators typically offer a range
+                    of customization options, allowing users to specify
+                    parameters like password length, inclusion of special
+                    characters, uppercase and lowercase letters, and numeric
+                    digits, thus tailoring the output to meet various security
+                    requirements.<br> By leveraging these tools, users can avoid the
+                    pitfalls of creating easily guessable passwords or reusing
+                    passwords across multiple sites, which can significantly
+                    increase vulnerability.<br> Moreover, many modern password
+                    generators incorporate additional features, such as the
+                    ability to store and manage passwords securely, integrating
+                    with password managers to provide a seamless experience in
+                    generating, storing, and autofilling credentials.<br> This is
+                    especially valuable in a landscape where strong, diverse
+                    passwords are a cornerstone of cybersecurity hygiene.<br> As
+                    cyber threats evolve, utilizing a robust password generator
+                    helps ensure that each password is sufficiently complex and
+                    unique, thereby strengthening the overall defense against
+                    unauthorized access and reducing the risk of data breaches.<br>
+                    Regular use of such tools, along with periodic updates to
+                    passwords, forms a proactive approach to digital security,
+                    safeguarding personal and sensitive information from
+                    increasingly sophisticated attacks.</p>
+            </div>
+
+
+
+
+            <img class="zoom2" src="quiz.png" alt="Zoom Image">
+
+
+            <div class="description2">
+                <p>The HTML and CSS quiz comprising 15 carefully crafted
+                    questions serves as an in-depth evaluation tool for gauging
+                    one's proficiency in fundamental web development skills.
+                    This quiz encompasses a broad range of topics crucial for
+                    anyone involved in creating and styling web pages.<br>
+                    Participants are tested on their knowledge of HTML elements
+                    and their appropriate usage, including an understanding of
+                    various tags, attributes, and the semantic structure of web
+                    content.<br> Additionally, it delves into CSS concepts,
+                    examining familiarity with selectors, properties, and values
+                    that control the presentation of web pages.<br> Key areas
+                    covered might include the box model, positioning techniques,
+                    Flexbox, and CSS Grid, which are essential for creating
+                    responsive and visually appealing layouts.<br> The quiz also
+                    explores best practices for achieving cross-browser
+                    compatibility and accessibility, ensuring that web pages are
+                    not only functional but also inclusive.<br> Through this
+                    structured set of questions, individuals can identify their
+                    strengths and pinpoint areas needing further study,
+                    providing a clear benchmark for both beginners aiming to
+                    solidify their foundational knowledge and more experienced
+                    developers looking to refresh and validate their skills.<br>
+                    Overall, this quiz serves as a valuable resource for
+                    continuous learning and improvement in the dynamic field of
+                    web development.</p>
+
+            </div>
+            <div class="fade-in-text2"><h4>My Certifications</h4></div>
+
+            <img class="cert1" src="celebalcert.png" alt="Zoom Image">
+            <img class="cert2" src="codechef.png" alt="Zoom Image">
+            <img class="cert3" src="hackerank.png" alt="Zoom Image"> 
+
+
+
+            <div class="linespade">
+                <hr>
+              </div>
+
+
+              <div class="footer1">
+                <h6>Contact Information</h6><br>
+
+                <h5>Email:harsh.6692rp@gmail.com</h5><br>
+                <h5>Phone:9057205431</h5><br>
+                <h5>Location:Jaipur,Rajasthan</h5>
+               
+              </div>
+
+             
+
+              <div class="footer3">
+                <h6>Follow Me</h6><br>
+
+                <a href="https://www.linkedin.com/in/harsh-sharma-06bab8230/">Linkedin</a><br>
+                <a href="https://github.com/harshsharmabtp">Github</a><br>
+                <a href="">Telegram</a>
+              </div>
+
+
+              <div class="linespade2">
+                <hr>
+              </div>
+
+
+              <div class="footer-bottom"> 
+                <h5>Quick Links</h5>
+
+              <div class="quicklinks">
+                <a href="">Home</a><br>
+                <a href="projects.html">Projects</a><br>
+                <a href="About.html">About</a><br>
+                <a href="index.html">Portfolio</a>
+              </div>
+
+              
+             <div class="footerlogo">
+                <img src="namelogo.png" alt="">
+             </div>
+
+              
+              
+
+           
+              
+
+        </div>
+
+    </body>
+</html>
